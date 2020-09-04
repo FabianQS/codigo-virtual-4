@@ -18,7 +18,9 @@
                     <input type="text" 
                     id="inputNombre" 
                     placeholder="Ingrese nombre completo" 
-                    required/>
+                    required
+                    minlength="4"
+                    maxlength="7"/>
                 </td>
             </tr>
             <!-- input nos permite cuando ponemos la flecha sobre el label 
@@ -28,7 +30,14 @@
                     <label for="inputedad">Edad :</label>
                 </td>
                 <td>
-                    <input type="number" id="inputedad" placeholder="Ingrese edad" />
+                    <input 
+                    type="number" 
+                    id="inputedad" 
+                    placeholder="Ingrese edad" 
+                    pattern="[a-z]{1,15}"
+                    min="0"
+                    max="10"
+                    />
                 </td>
             </tr>
 
@@ -100,7 +109,13 @@
                     <label for="inputPassword">Password</label>
                 </td>
                 <td>
-                    <input type="password" id="inputPassword" />
+                    <input 
+                    type="password" 
+                    id="inputPassword"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and 
+                    one uppercase and lowercase letter, 
+                    and at least 8 or more characters" />
                 </td>
             </tr>
 
