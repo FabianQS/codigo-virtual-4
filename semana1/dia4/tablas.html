@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Configuraciones de Tabla</h2>
+        </section>
+        <table border="1" bgColor="#1AEB72"
+            background="https://angular-school-deploy.s3.amazonaws.com/images/the_A_gif-1c1149415fb6c5d83c38989f169d7630.gif"
+            bordercolor="white" 
+            cellpadding="100" 
+            width="500" 
+            height="400" 
+            >
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Fabian</td>
+                    <td>Quispe</td>
+                    <td>24</td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <h2>Rowspan y el colspan</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Duracion</th>
+                        <th>Profesor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- rowspan = ocupa filas -->
+                        <td rowspan="3">Algoritmos</td>
+                        <!-- colspan =ocupa columnas -->
+                        <td colspan="2">
+                            <center>3 meses</center>
+                        </td>
+                        <td>Juanito</td>
+                    </tr>
+                    <tr>
+                        <td>1 mes</td>
+                        <td>Jorge garnica</td>
+                    </tr>
+                    <tr>
+                        <td>1 dia</td>
+                        <td>Mi profe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

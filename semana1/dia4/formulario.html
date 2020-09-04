@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="inputNombre">Nombre Completo :</label>
+                </td>
+                <!-- Nos permite colocar una caja de texto para ingresar datos -->
+                <td>
+                    <input type="text" 
+                    id="inputNombre" 
+                    placeholder="Ingrese nombre completo" 
+                    required/>
+                </td>
+            </tr>
+            <!-- input nos permite cuando ponemos la flecha sobre el label 
+        immediatamente te coloca el puntero en la caja de texto -->
+            <tr>
+                <td>
+                    <label for="inputedad">Edad :</label>
+                </td>
+                <td>
+                    <input type="number" id="inputedad" placeholder="Ingrese edad" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputfecha">Fecha Nacimiento</label>
+                </td>
+                <td>
+                    <input type="date" id="inputfechaNacimiento" value="2020-12-12">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputcolor">Color</label>
+                </td>
+                <td>
+                    <input type="color" id="inputcolor">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Genero</label>
+                </td>
+                <td>
+                    <label for="inputradiom">Masculino</label>
+                    <input type="radio" id="inputradiom" name="genero" checked>
+
+                    <label for="inputradiof">Femenino</label>
+                    <input type="radio" id="inputradiof" name="genero">
+
+                    <label for="inputradioO">Otro</label>
+                    <input type="radio" id="inputradioO" name="genero">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Idiomas</label>
+                </td>
+                <td>
+                    <label for="checkingles">Ingles</label>
+                    <input type="checkbox" id="checkingles" name="idioma" checked>
+
+                    <label for="checkespañol">Español</label>
+                    <input type="checkbox" id="checkespañol" name="idioma">
+
+                    <label for="checkportugues">Portugues</label>
+                    <input type="checkbox" id="checkportugues" name="idioma">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Email :</label>
+                </td>
+                <td>
+                    <input type="email" 
+                    value="@gmail.com" 
+                    placeholder="Ingrese su Email" 
+                    id="inputEmail" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="inputPassword">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="inputPassword" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="txtAreaComentario">Comentarios</label>
+                </td>
+                <td>
+                    <textarea name="txtAreaComentario" id="" cols="10" rows="4">
+
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Acciones</label>
+                </td>
+                <td>
+                    <input type="submit" value="Registrarme">
+                    <input type="reset" value="Limpiar Formulario">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+
+</body>
+
+</html>
