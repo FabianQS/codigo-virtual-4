@@ -1,3 +1,7 @@
+h1,h2,h3{
+    color: white;
+}
+
 header{
     background: red;
 }
@@ -7,9 +11,8 @@ nav{
 section{
     background: yellow;
 }
-
-h2,h3{
-    background: green;
+section>article{
+    background:green;
 }
 
 aside{
@@ -17,5 +20,6 @@ aside{
 }
 
 footer{
-    background:purple
+    background:blueviolet
 }
+
